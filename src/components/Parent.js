@@ -1,9 +1,10 @@
 import React from 'react';
+import Child from './Child';
 
-const Parent = () => (
+const Parent = (props) => (
     <React.Fragment>
         <div>This is the parent</div>
-        <div>We are using React Fragment Feature</div>
+        <Child data={props.data}/>
     </React.Fragment>
 );
 
